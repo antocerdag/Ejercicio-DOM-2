@@ -16,19 +16,21 @@
 
 	<script>
 		//Escribe aquí tu código Javascript
-		var men = document.getElementByClassName("mensaje").length;
+
 		function mensa(men){
-			var retorna = "";
+			var men = document.getElementsByClassName("mensaje").length;
+			console.log(men);
+			var retorna = " ";
 			if(men == 1){
-				alert("Es muy poco");
+				retorna = alert("Es muy poco");
 			}
-			/*if (men > 2 && (men < 4)){
+			if (men > 2 && (men < 4)){
 				retorna = alert("No está mal");
 			}
 			if (men >= 4 ){
 				retorna = alert("Son muchos!");
 			}
-			return retorna;*/
+			return retorna;
 		}
 		mensa();
 		
